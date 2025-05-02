@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css'; 
 
 function Home() {
-  const phoneNumber = "919876543210"; // replace with your number
+  const phoneNumber = "919600446376"; // replace with your number
   const message = "Hi, I’m interested in your gardening services!";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
