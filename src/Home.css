@@ -50,6 +50,7 @@
   .home {
     padding: 100px 20px 0 20px;
     align-items: flex-start;
+    background-position: center;
   }
 
   .home .head {
@@ -69,6 +70,7 @@
     padding: 80px 15px 0 15px;
     align-items: center;
     text-align: center;
+    background-position: center;
   }
 
   .home .head {
@@ -77,5 +79,6 @@
 
   .home .con {
     font-size: 14px;
+    line-height: 1.5;
   }
 }
