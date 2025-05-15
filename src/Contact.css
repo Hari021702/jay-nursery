@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+/* Main layout for contact + reviews */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 40px 100px;
+  gap: 40px;
+  margin-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left: Contact Info */
+.contact-container {
+  flex: 1;
+  max-width: 50%;
+  color: #333;
+  margin-bottom: 55px;
+}
+
+.contact-container h2 {
+  color: #4CAF50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-container p i {
+  color: #4CAF50;
+  font-size: 22px;
+}
+
+/* Right: Review Slider */
+.reviews-slider {
+  flex: 1;
+  max-width: 50%;
+  color: #333;
+}
+
+.reviews-slider h2 {
+  color: #4CAF50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.review-card {
+  background-color: #f0f0f0;
+  padding: 18px;
+  border-radius: 10px;
+  min-height: 120px;
+  margin: 10px 0;
+}
+
+.review-card p {
+  margin-left: 0px;
+}
+
+.review-author {
+  margin-top: 10px;
+  margin-right: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-container,
+  .reviews-slider {
+    max-width: 100%;
+  }
+}

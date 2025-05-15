@@ -1,8 +1,8 @@
 .footer {
     background-color: #4CAF50;
-    height: auto;
+    height: 240px;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     font-family: "Poppins", sans-serif;
     opacity: 0.9;
   }
@@ -23,11 +23,48 @@
   }
 
   .footer .map{
-    margin-top: -90px;
-    margin-left: 50%;
+    margin-top: -120px;
+    margin-left: 52%;
     height: 170px;
     width: 40%;
   }
+
+  .social-icons {
+  margin-left: 35%;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.social-icons h4{
+  margin-top: -83px;
+  font-size: 18px;
+}
+
+.social-logo {
+  width: 40px;  
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+}
+
+.rights-reserved {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
   /* Responsive */
   @media (max-width: 768px) {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
 
 .home {
+  position: relative;
   background-image: url('../src/assets/cactus-8436514.jpg');
   background-size: cover;
   background-position: center;
@@ -8,55 +9,73 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 120px 0 0 60px; 
+  padding: 120px 0 0 60px;
+  color: white;
+}
+
+/* Optional: Dark overlay for text readability */
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.home > * {
+  position: relative;
+  z-index: 1;
 }
 
 .home .head {
-  color: white;
   font-size: 32px;
-  opacity: 0.7  ;
+  opacity: 0.85;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .home .con {
-  color: white;
-  opacity: 0.6;
+  opacity: 0.75;
   font-family: "Poppins", sans-serif;
   line-height: 1.8;
   font-size: 18px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .home {
-      padding: 100px 20px 0 20px; 
-      align-items: flex-start;
-    }
-  
-    .home .head {
-      font-size: 24px;
-      text-align: left;
-    }
-  
-    .home .con {
-      font-size: 16px;
-      line-height: 1.6;
-      text-align: left;
-    }
+  .home {
+    padding: 100px 20px 0 20px;
+    align-items: flex-start;
   }
-  
-  @media (max-width: 480px) {
-    .home {
-      padding: 80px 15px 0 15px;
-    }
-  
-    .home .head {
-      font-size: 20px;
-    }
-  
-    .home .con {
-      font-size: 14px;
-    }
+
+  .home .head {
+    font-size: 24px;
+    text-align: left;
   }
-  
+
+  .home .con {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 80px 15px 0 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home .head {
+    font-size: 20px;
+  }
+
+  .home .con {
+    font-size: 14px;
+  }
+}

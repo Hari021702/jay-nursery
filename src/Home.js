@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; 
+import './Home.css';
 
 function Home() {
   const phoneNumber = "919600446376"; // replace with your number
@@ -10,15 +10,15 @@ function Home() {
     <div className="home">
       <h3 className='head'>Services We Do</h3>
       <span className='con'>
-      <p>Gardening services</p>
-      <p>Planting services</p>
-      <p>Pots</p>
-      <p>In-door plants</p>
-      <p>Flower plants</p>
+        <p>Gardening services</p>
+        <p>Planting services</p>
+        <p>Pots</p>
+        <p>In-door plants</p>
+        <p>Flower plants</p>
       </span>
 
-       {/* WhatsApp Sticky Button */}
-       <a
+      {/* WhatsApp Sticky Button */}
+      <a
         href={whatsappURL}
         target="_blank"
         rel="noopener noreferrer"
